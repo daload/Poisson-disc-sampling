@@ -9,8 +9,10 @@ parser.add_argument('-k', type=int, help='an integer for the number of points ar
 parser.add_argument('-r', '--radius', type=float, help='a float for the minimum distance between samples')
 args = vars(parser.parse_args())
 
-w = args['width'] if args['width'] != None else 60
-h = args['height'] if args['height'] != None else 45
-k = args['k'] if args['k'] != None else 30
-r = args['radius'] if args['radius'] != None else 1.7
+w = args['width'] if args['width'] is not None else 60
+h = args['height'] if args['height'] is not None else 45
+k = args['k'] if args['k'] is not None else 30
+r = args['radius'] if args['radius'] is not None else 1.7
+print('Running Poisson Disc Sampling with parameters:\n\t-width: {},\n\t-height: {},\n\t-k: {},\n\t-radius: {}'
+      .format(w, h, k, r))
 pds.pds(w, h, k, r)
