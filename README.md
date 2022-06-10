@@ -11,6 +11,8 @@
 ## About The Project
 
 This project came to life thanks to a final delivery from a uni subject. I investigated poisson disc sampling(pds) to a theoretical level and I wanted to create a simple implementation of the algorithm.
+
+<a href="https://github.com/daload/poisson-disc-sampling/blob/main/Poisson_Disc_Sampling.pdf">How does Poisson Disc Sampling work?</a>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
